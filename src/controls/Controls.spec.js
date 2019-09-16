@@ -19,9 +19,10 @@ test('closed when locked', () => {
   const toggleClosed = jest.fn();
   const {getByText} = render(<Controls toggleClosed={toggleClosed}/>);
 
-  const locked = getByText(/locked/i);
+  const locked = getByText(/lock/i);
   
   fireEvent.click(locked);
-  expeect(toggleClosed).toHaveBeenCalled();
+  
+  expect(toggleClosed).toHaveBeenCalledTimes(0);
 }
 );
