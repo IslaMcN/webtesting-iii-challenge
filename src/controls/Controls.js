@@ -1,4 +1,5 @@
 import React from 'react';
+import uuid from 'uuid';
 
 const Controls = props => {
   const { locked, closed, toggleLocked, toggleClosed } = props;
@@ -16,3 +17,11 @@ const Controls = props => {
 };
 
 export default Controls;
+
+exports.makeUser = function (firstName, lastName) {
+  return {
+    id: uuid(),
+    fullName: `${firstName} ${lastName}`,
+  }
+}
+
