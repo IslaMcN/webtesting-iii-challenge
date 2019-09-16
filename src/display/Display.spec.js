@@ -14,3 +14,8 @@ test('message renders upon success', async () => {
     expect(queryByText(/success!/i)).toBeNull();
     
 })
+
+// displays 'Closed' if the closed prop is true and 'Open' if otherwise
+// displays 'Locked' if the locked prop is true and 'Unlocked' if otherwise
+
+test('displays Closed if the closed prop is true ')
