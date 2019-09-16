@@ -18,10 +18,4 @@ const Controls = props => {
 
 export default Controls;
 
-exports.makeUser = function (firstName, lastName) {
-  return {
-    id: uuid(),
-    fullName: `${firstName} ${lastName}`,
-  }
-}
 
