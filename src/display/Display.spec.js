@@ -17,5 +17,11 @@ test('message renders upon success', async () => {
 
 // displays 'Closed' if the closed prop is true and 'Open' if otherwise
 // displays 'Locked' if the locked prop is true and 'Unlocked' if otherwise
-
-test('displays Closed if the closed prop is true ')
+Display();
+if(closed()) {
+    Display();
+}
+test('displays Closed if the closed prop is true ', () => {
+    Display();
+    expect(closed()).toBeTruthy();
+});
